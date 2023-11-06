@@ -1,0 +1,27 @@
+﻿<?xml version="1.0" encoding="utf-8" ?>
+<ContentPage xmlns="http://schemas.microsoft.com/dotnet/2021/maui"
+             xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml"
+             x:Class="Lab8AddingMachine.MainPage">
+
+    <StackLayout>
+        <Label Text="Adding Machine"
+               HorizontalOptions="Center"
+               VerticalOptions="Start"/>
+        <Entry x:Name="txtFirstNumber" Placeholder="Enter the first number"
+               Margin="4,4,4,4" Keyboard="Numeric"/>
+        <Label Text="+"
+               HorizontalOptions="Center"
+               VerticalOptions="Start"/>
+        <Entry x:Name="txtSecondNumber" Placeholder="Enter the second number"
+               Margin="4,4,4,4" Keyboard="Numeric"/>
+        <Button Text="Evaluate"
+                x:Name="btnEvaluate"
+                HorizontalOptions="Center" VerticalOptions="Start"
+                Clicked="btnEvaluate_Click"/>
+        <Label Text="0" x:Name="lblResult"
+               HorizontalOptions="Center"
+               VerticalOptions="Start"
+               Margin="0,20,0,0"/>
+    </StackLayout>
+
+</ContentPage>
